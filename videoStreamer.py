@@ -19,3 +19,8 @@ with picamera.PiCamera() as camera:
     finally:
         connection.close()
         server_socket.close()
+        
+        
+#This script is needed on the client side - we can simply use VLC with a network URL:
+#$ vlc tcp/h264://my_pi_address:8000/
+#There 2~3 seconds delay in my test on Raspberry Pi 2.
